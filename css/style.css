@@ -128,6 +128,10 @@ h6 {
   background-color: #EAC4BD;
 }
 
+.stretching {
+  grid-row-start: span 2;
+}
+
 .future-mark {
   background-color: #DABDEA;
 }
