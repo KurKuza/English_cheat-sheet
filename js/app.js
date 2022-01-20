@@ -340,7 +340,7 @@
               : e.breakpoint - t.breakpoint;
           });
     });
-  if ((new n("max").init(), innerWidth < 600)) {
+  if ((new n("max").init(), innerWidth < 767)) {
     document.querySelectorAll(".grid__tense").forEach((t) => {
       t.classList.contains("additional-padding") ||
         t.classList.add("additional-padding");

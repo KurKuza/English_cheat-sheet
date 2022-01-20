@@ -78,19 +78,6 @@ h6 {
   overflow: hidden;
   touch-action: none;
 }
-.wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.wrapper > main {
-  flex: 1 1 auto;
-}
-.wrapper > * {
-  min-width: 0;
-}
-
 /*
 (i) Стили будут применяться ко 
 всем классам содержащим *__container
@@ -142,7 +129,7 @@ h6 {
   opacity: 0;
   visibility: hidden;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 47.9375em) {
   .hide-mark {
     opacity: 1;
     visibility: visible;
@@ -333,7 +320,7 @@ h6 {
     column-gap: 0.9375rem;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 47.9375em) {
   .tense-time__container {
     display: flex;
     flex-direction: column;
@@ -342,17 +329,16 @@ h6 {
   }
 }
 
-@media (min-width: 37.5625em) {
+@media (min-width: 48em) {
   .spollers__item {
     display: flex;
     align-items: center;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 47.9375em) {
   .spollers__item {
     width: 100%;
     height: 25%;
-    background-color: #eee;
   }
   .spollers__item:nth-child(n) .grid__tense:not(:last-child) {
     margin-bottom: 15px;
@@ -366,9 +352,10 @@ h6 {
   align-items: center;
   font-size: 3rem;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 47.9375em) {
   .marks__say {
     width: 100%;
+    background-color: #eee;
     height: 25%;
   }
 }
@@ -393,17 +380,17 @@ h6 {
     font-size: 1.125rem;
   }
 }
-@media (max-width: 37.5em) and (min-width: 75em) {
+@media (max-width: 47.9375em) and (min-width: 75em) {
   .grid__tense {
     font-size: 2.8125rem;
   }
 }
-@media (max-width: 37.5em) and (min-width: 20em) and (max-width: 75em) {
+@media (max-width: 47.9375em) and (min-width: 20em) and (max-width: 75em) {
   .grid__tense {
     font-size: clamp( 1.125rem , 0.5113636364rem  +  3.0681818182vw , 2.8125rem );
   }
 }
-@media (max-width: 37.5em) and (max-width: 20em) {
+@media (max-width: 47.9375em) and (max-width: 20em) {
   .grid__tense {
     font-size: 1.125rem;
   }
