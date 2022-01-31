@@ -168,6 +168,66 @@ h6 {
   grid-row-start: span 2;
 }
 
+.reduction__table {
+  margin: auto;
+}
+@media (min-width: 75em) {
+  .reduction__table {
+    width: 31.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 75em) {
+  .reduction__table {
+    width: clamp( 20rem , 15.9090909091rem  +  20.4545454545vw , 31.25rem );
+  }
+}
+@media (max-width: 20em) {
+  .reduction__table {
+    width: 20rem;
+  }
+}
+.reduction__table th,
+.reduction__table td {
+  padding: 16px 20px;
+  border: 1px solid #c8c8c8;
+  background-color: trnasparent;
+  font-weight: 400;
+  text-align: center;
+}
+
+.verbs tbody tr:nth-child(even) {
+  background-color: #f8f7f7;
+}
+.verbs th,
+.verbs td {
+  padding: 16px 20px;
+  background-color: trnasparent;
+  font-weight: 400;
+  text-align: center;
+}
+.verbs table {
+  margin: auto;
+}
+@media (min-width: 75em) {
+  .verbs table {
+    width: 56.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 75em) {
+  .verbs table {
+    width: clamp( 20rem , 6.8181818182rem  +  65.9090909091vw , 56.25rem );
+  }
+}
+@media (max-width: 20em) {
+  .verbs table {
+    width: 20rem;
+  }
+}
+.verbs thead {
+  background-color: #3b528b;
+  color: #fff;
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -255,11 +315,9 @@ h6 {
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
   gap: 30px;
-  margin-top: 25vh;
 }
 @media (max-width: 29.99875em) {
   .tenses__container {
-    margin-top: auto;
     grid-template: 1fr/1fr;
     gap: 15px;
   }
@@ -297,6 +355,26 @@ h6 {
   .tenses__text {
     font-size: 2.25rem;
   }
+}
+
+.page-home section {
+  display: block;
+}
+.page-home section:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.page-home {
+  overflow: hidden;
+}
+
+.another a {
+  display: grid;
+  margin-bottom: 30px;
+}
+
+.another__box {
+  padding: 50px 0px;
 }
 
 .tense-time__container {
