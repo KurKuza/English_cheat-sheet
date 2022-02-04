@@ -358,27 +358,31 @@
           e.classList.add("additional-padding");
       });
     }
-    !(function (e) {
-      let t = document.getElementById("myTable");
-      for (let a = 0; a < e.length; a++) {
-        let s = `<tr>\n\t\t\t\t\t\t\t\t\t<td>${e[a].base}</td>\n\t\t\t\t\t\t\t\t\t<td>${e[a].pastSimple}</td>\n\t\t\t\t\t\t\t\t\t<td>${e[a].pastParticiple}</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t`;
-        t.innerHTML += s;
+    if (-1 != ["/irregular-verbs.html"].indexOf(location.pathname)) {
+      let e = document.querySelector(".table");
+      function t(t) {
+        for (let a = 0; a < t.length; a++) {
+          let s = `<tr>\n\t\t\t\t\t\t\t\t\t<td>${t[a].base}</td>\n\t\t\t\t\t\t\t\t\t<td>${t[a].pastSimple}</td>\n\t\t\t\t\t\t\t\t\t<td>${t[a].pastParticiple}</td>\n\t\t\t\t\t\t\t</tr>`;
+          e.innerHTML += s;
+        }
       }
-    })(r.p),
-      (window.onload = () => {
-        document.querySelector("#search").oninput = function () {
-          let e = this.value.trim(),
-            t = document.querySelectorAll("tbody tr");
-          e
-            ? t.forEach((t) => {
-                -1 == t.innerText.search(e) && t.classList.add("hide");
-              })
-            : t.forEach((e) => {
-                e.classList.remove("hide");
-              });
-        };
-      }),
-      (window.FLS = !0),
+      t(r.p),
+        (window.onload = () => {
+          document.querySelector("#search").oninput = function () {
+            let e = this.value.trim(),
+              t = document.querySelectorAll("tbody tr");
+            console.log(t),
+              e
+                ? t.forEach((t) => {
+                    -1 == t.innerText.search(e) && t.classList.add("hide");
+                  })
+                : t.forEach((e) => {
+                    e.classList.remove("hide");
+                  });
+          };
+        });
+    }
+    (window.FLS = !0),
       (function (e) {
         let t = new Image();
         (t.onload = t.onerror =
