@@ -232,20 +232,19 @@
           e.classList.add("additional-padding");
       });
     }
-    console.log(i.p);
-    let p = ["/irregular-verbs.html"];
-    if (-1 != p.indexOf(location.pathname)) {
-      let e = document.querySelector(".table");
-      function t(t) {
-        console.log(e);
-        for (let a = 0; a < t.length; a++) {
-          let s = `<tr>\n\t\t\t\t\t\t\t\t\t<td>${t[a].base}</td>\n\t\t\t\t\t\t\t\t\t<td>${t[a].pastSimple}</td>\n\t\t\t\t\t\t\t\t\t<td>${t[a].pastParticiple}</td>\n\t\t\t\t\t\t\t\t</tr>`;
-          console.log(s), (e.innerHTML += s);
+    let p = document.querySelector(".table");
+    console.log(p), console.log(i.p);
+    let l = ["/irregular-verbs.html"];
+    if (-1 != l.indexOf(location.pathname)) {
+      function e(e) {
+        for (let t = 0; t < e.length; t++) {
+          let a = `<tr>\n\t\t\t\t\t\t\t\t\t<td>${e[t].base}</td>\n\t\t\t\t\t\t\t\t\t<td>${e[t].pastSimple}</td>\n\t\t\t\t\t\t\t\t\t<td>${e[t].pastParticiple}</td>\n\t\t\t\t\t\t\t\t</tr>`;
+          console.log(a), (p.innerHTML += a);
         }
       }
-      console.log(p),
+      console.log(l),
         console.log(i.p),
-        t(i.p),
+        e(i.p),
         (window.onload = () => {
           document.querySelector("#search").oninput = function () {
             let e = this.value.trim(),
