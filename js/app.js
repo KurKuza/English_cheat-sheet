@@ -235,17 +235,17 @@
     console.log(i.p);
     let p = ["/irregular-verbs.html"];
     if (-1 != p.indexOf(location.pathname)) {
-      function e(e) {
-        let t = document.querySelector(".table");
-        console.log(t);
-        for (let a = 0; a < e.length; a++) {
-          let s = `<tr>\n\t\t\t\t\t\t\t\t\t<td>${e[a].base}</td>\n\t\t\t\t\t\t\t\t\t<td>${e[a].pastSimple}</td>\n\t\t\t\t\t\t\t\t\t<td>${e[a].pastParticiple}</td>\n\t\t\t\t\t\t\t\t</tr>`;
-          console.log(s), (t.innerHTML += s);
+      let e = document.querySelector(".table");
+      function t(t) {
+        console.log(e);
+        for (let a = 0; a < t.length; a++) {
+          let s = `<tr>\n\t\t\t\t\t\t\t\t\t<td>${t[a].base}</td>\n\t\t\t\t\t\t\t\t\t<td>${t[a].pastSimple}</td>\n\t\t\t\t\t\t\t\t\t<td>${t[a].pastParticiple}</td>\n\t\t\t\t\t\t\t\t</tr>`;
+          console.log(s), (e.innerHTML += s);
         }
       }
       console.log(p),
         console.log(i.p),
-        e(i.p),
+        t(i.p),
         (window.onload = () => {
           document.querySelector("#search").oninput = function () {
             let e = this.value.trim(),
