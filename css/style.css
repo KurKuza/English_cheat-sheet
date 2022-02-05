@@ -207,11 +207,10 @@ tr {
   background-color: transparent;
   font-weight: 400;
   text-align: center;
-  margin: -2px;
 }
 .verbs table {
   line-height: 1.2222222222;
-  width: 60vh;
+  width: 290px;
   margin: auto;
 }
 .verbs thead {
@@ -221,7 +220,7 @@ tr {
 
 .input__search {
   height: 40px;
-  width: 60vh;
+  width: 290px;
   margin: auto;
 }
 .input__search input {
