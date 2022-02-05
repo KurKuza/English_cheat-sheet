@@ -235,7 +235,14 @@
     let p = JSON.stringify(i);
     console.log(p);
     let l = document.querySelector(".table");
-    if (-1 != ["/irregular-verbs.html"].indexOf(location.pathname)) {
+    if (
+      -1 !=
+      [
+        "/irregular-verbs.html",
+        "/English_cheat-sheet/irregular-verbs.html",
+        "kurkuza.github.io/English_cheat-sheet/irregular-verbs.html",
+      ].indexOf(location.pathname)
+    ) {
       function e(e) {
         for (let t = 0; t < e.length; t++) {
           let a = `<tr>\n\t\t\t\t\t\t\t\t\t<td>${e[t].base}</td>\n\t\t\t\t\t\t\t\t\t<td>${e[t].pastSimple}</td>\n\t\t\t\t\t\t\t\t\t<td>${e[t].pastParticiple}</td>\n\t\t\t\t\t\t\t\t</tr>`;
