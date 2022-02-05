@@ -244,8 +244,8 @@
         }
       }
       console.log(p),
-        console.log(i.verbs),
-        e(i.verbs),
+        console.log(i[0]),
+        e(i[0]),
         (window.onload = () => {
           document.querySelector("#search").oninput = function () {
             let e = this.value.trim(),
