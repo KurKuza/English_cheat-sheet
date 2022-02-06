@@ -203,14 +203,30 @@ tr {
 
 .verbs th,
 .verbs td {
-  padding: 16px 5px;
-  background-color: transparent;
+  padding: 10px 5px;
   font-weight: 400;
   text-align: center;
 }
+@media (min-width: 75em) {
+  .verbs th,
+.verbs td {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 75em) {
+  .verbs th,
+.verbs td {
+    font-size: clamp( 1.125rem , 1.0795454545rem  +  0.2272727273vw , 1.25rem );
+  }
+}
+@media (max-width: 20em) {
+  .verbs th,
+.verbs td {
+    font-size: 1.125rem;
+  }
+}
 .verbs table {
   line-height: 1.2222222222;
-  width: 290px;
   margin: auto;
 }
 .verbs thead {
