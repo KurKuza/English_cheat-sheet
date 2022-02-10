@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220206234152">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220211022228">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,39 +14,46 @@
 
 <body>
 	<div class="wrapper">
-		<!-- <header class="header">
-	<div class="header__container">
-		<div class="header__menu menu">
-			 <button type="button" class="menu__icon icon-menu"><span></span></button> 
-			<nav class="menu__body">
-				<ul class="menu__list">
-					<li class="menu__item"><a href="" class="menu__link">Main</a></li>
-					<li class="menu__item"><a href="" class="menu__link">Useful</a></li>
-					<li class="menu__item"><img src="img/icons/auto.svg" alt="auto switche"></li>
-					<li class="menu__item"> <img src="img/icons/info.svg" alt="info"></li>
-
-				</ul>
-			</nav>
-		</div>
-	</div>
-</header> -->
-		<main class="page page-verbs">
-			<div class="verbs">
-				<div class="input__search">
-					<input id="search" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search" class="input">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Main</a></li>
+							<li class="menu__item"><a href="simple.html" class="menu__link">Simple</a></li>
+							<li class="menu__item"><a href="continuous.html" class="menu__link">Continuous</a></li>
+							<li class="menu__item"><a href="perfect.html" class="menu__link">Perfect</a></li>
+							<li class="menu__item"><a href="perfect_continuous.html" class="menu__link">Perfect Continuous</a></li>
+							<li class="menu__item"><a href="irregular-verbs.html" class="menu__link">Irregular Verbs</a></li>
+							<li class="menu__item"><a href="reduction.html" class="menu__link">Reduction</a></li>
+							<li class="menu__item info"><button data-popup=".popup" class="info__button"><img src="img/icons/info.svg" alt="info"></button> </li>
+						</ul>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</nav>
 				</div>
-				<table class="irregular-verbs">
-					<thead>
-						<tr>
-							<th>Base form</th>
-							<th>Past tense</th>
-							<th>Past participle</th>
-						</tr>
-					</thead>
-					<tbody class="table">
-					</tbody>
-				</table>
 			</div>
+		</header>
+		<!-- <li class="menu__item"><a href="" class="menu__link">Useful</a></li> -->
+		<!-- <li class="menu__item"><img src="img/icons/auto.svg" alt="auto switche"></li>-->
+		<main class="page page-verbs">
+			<section class="verbs">
+				<div class="verbs__container">
+					<div class="input__search">
+						<input id="search" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search" class="input">
+					</div>
+					<table class="irregular-verbs">
+						<thead>
+							<tr>
+								<th>Base form</th>
+								<th>Past tense</th>
+								<th>Past participle</th>
+							</tr>
+						</thead>
+						<tbody class="table">
+						</tbody>
+					</table>
+				</div>
+			</section>
 
 		</main>
 		<footer class="footer">
@@ -55,19 +62,37 @@
 		</footer>
 
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+	<div id="info-popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<div class="popup__info info-content">
+						<div class="info-content__left">
+							<div class="info-content__text">You can throw me a donat for coffee ☕</div>
+							<div class="info-content__donat">
+								<img src="img/icons/Donation_alerts.svg" alt="icon Donation alerts">
+							</div>
+						</div>
+						<div class="info-content__right">
+							<div class="info-content__image"><picture><source srcset="img/Person.webp"type="image/webp"><img src="img/Person.png" alt="person"></picture></div>
+							<div class="info-content__socio">
+								<a href="" class="info-content__socio-link">
+									<img src="img/icons/GitHub.svg" alt="icon GitHub"></a>
+								<a href="" class="info-content__socio-link">
+									<img src="img/icons/Facebook.svg" alt="icon Facebook"></a>
+								<a href="" class="info-content__socio-link">
+									<img src="img/icons/Vk.svg" alt="icon Vk"></a>
+								<a href="" class="info-content__socio-link">
+									<img src="img/icons/Tg.svg" alt="icon Telegram"></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20220206234152"></script>
+	<script src="js/app.min.js?_v=20220211022228"></script>
 </body>
 
 </html>

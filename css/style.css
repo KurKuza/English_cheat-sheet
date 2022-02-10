@@ -78,6 +78,10 @@ h6 {
   overflow: hidden;
   touch-action: none;
 }
+.page {
+  margin-top: 1.25rem;
+}
+
 /*
 (i) Стили будут применяться ко 
 всем классам содержащим *__container
@@ -238,14 +242,183 @@ tr {
   height: 40px;
   width: 290px;
   margin: auto;
+  margin-bottom: 5px;
 }
 .input__search input {
   width: 100%;
   height: 100%;
   outline: none;
   padding: 0px 15px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease 0s;
+  pointer-events: none;
+  z-index: 149;
+}
+
+body.popup-show::after {
+  opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 30px 10px;
+  transition: visibility 0.8s ease 0s;
+  visibility: hidden;
+  pointer-events: none;
+}
+@media (max-width: 29.99875em) {
+  .popup {
+    padding: 30px 0px;
+  }
+}
+
+.popup_show {
+  z-index: 150;
+  visibility: visible;
+  overflow: auto;
+  pointer-events: auto;
+}
+
+.popup_show .popup__content {
+  visibility: visible;
+  transform: scale(1);
+}
+
+.popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  visibility: hidden;
+  transform: scale(0);
+  transition: transform 0.3s ease 0s;
+  background-color: #eee;
+  width: auto;
+  max-width: 900px;
+  border-radius: 20px;
+}
+@media (min-width: 75em) {
+  .popup__content {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 75em) {
+  .popup__content {
+    padding: clamp( 0.625rem , -0.0568181818rem  +  3.4090909091vw , 2.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .popup__content {
+    padding: 0.625rem;
+  }
+}
+.lock .popup__content {
+  visibility: visible;
+}
+@media (max-width: 29.99875em) {
+  .popup__content {
+    border-radius: 0px;
+  }
+}
+
+.popup__close {
+  left: 95%;
+  outline: none;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 12;
+}
+@media (max-width: 29.99875em) {
+  .popup__close {
+    left: 90%;
+  }
+}
+.popup__close span, .popup__close::before, .popup__close::after {
+  content: "";
+  transition: all 0.3s ease 0s;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+.popup__close::before {
+  top: 0px;
+}
+.popup__close::after {
+  bottom: 0px;
+}
+.popup__close span {
+  top: calc(50% - 1px);
+}
+.popup__close span {
+  transform: scale(0);
+}
+.popup__close::before {
+  transform: rotate(-45deg);
+  top: calc(50% - 1px);
+}
+.popup__close::after {
+  transform: rotate(45deg);
+  bottom: calc(50% - 1px);
+}
+
+.info-content {
+  display: flex;
+  align-items: center;
+  margin-top: 0.9375rem;
+}
+@media (max-width: 47.99875em) {
+  .info-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (min-width: 47.99875em) {
+  .info-content__left {
+    margin-right: 1.875rem;
+  }
+}
+.info-content__text {
+  font-size: 24px;
+  margin-bottom: 0.9375rem;
+}
+.info-content__donat img {
+  width: 90%;
+  height: 100%;
+}
+.info-content__image {
+  margin-bottom: 0.9375rem;
+}
+.info-content__socio-link:not(:last-child) {
+  margin-right: 0.9375rem;
 }
 
 [class*=-ibg] {
@@ -265,6 +438,7 @@ tr {
 }
 
 .header__container {
+  position: relative;
   display: flex;
   background-color: #CEDCFF;
   border-radius: 0px 0px 5px 5px;
@@ -272,62 +446,105 @@ tr {
   height: 40px;
   justify-content: end;
 }
+.menu__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .menu__list {
   display: flex;
   align-items: center;
+  text-align: center;
+  overflow: auto;
 }
-.menu__item {
+@media (max-width: 61.99875em) {
+  .menu__list {
+    display: none;
+  }
+}
+.menu__item:not(:last-child) {
   margin-right: 30px;
 }
 .menu__item img:nth-child(n) {
   width: 25px;
 }
-/*
-.icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
-		display: block;
-		position: relative;
-		width: 30px;
-		height: 18px;
-		cursor: pointer;
-		z-index: 5;
-		span,
-		&::before,
-		&::after {
-			content: "";
-			transition: all 0.3s ease 0s;
-			left: 0px;
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-		}
-		&::before {
-			top: 0px;
-		}
-		&::after {
-			bottom: 0px;
-		}
-		span {
-			top: calc(50% - 1px);
-		}
-		.menu-open & {
-			span {
-				transform: scale(0);
-			}
-			&::before {
-				transform: rotate(-45deg);
-				top: calc(50% - 1px);
-			}
-			&::after {
-				transform: rotate(45deg);
-				bottom: calc(50% - 1px);
-			}
-		}
-	}
+.info__button {
+  width: 40px;
+  height: 40px;
 }
-*/
+
+@media (max-width: 61.99875em) {
+  .menu-open .menu__list {
+    display: flex;
+    z-index: 10;
+    height: 100vh;
+    overflow: auto;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 60px 30px;
+    background: #e6eef4;
+    font-weight: 500;
+  }
+  .menu-open .menu__list .menu__item {
+    font-size: 1.375rem;
+    display: block;
+    margin: auto;
+  }
+  .menu-open .menu__list .menu__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 61.99875em) and (max-width: 29.99875em) {
+  .menu-open .menu__list {
+    width: 100%;
+  }
+}
+.icon-menu {
+  display: none;
+}
+@media (max-width: 61.99875em) {
+  .icon-menu {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 15;
+  }
+  .icon-menu span, .icon-menu::before, .icon-menu::after {
+    content: "";
+    transition: all 0.3s ease 0s;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  .icon-menu::before {
+    top: 0px;
+  }
+  .icon-menu::after {
+    bottom: 0px;
+  }
+  .icon-menu span {
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu span {
+    transform: scale(0);
+  }
+  .menu-open .icon-menu::before {
+    transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu::after {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+}
+
 .tenses {
   margin-top: 15px;
 }
@@ -449,12 +666,14 @@ tr {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
+  cursor: default;
 }
 @media (max-width: 47.9375em) {
   .marks__say {
     width: 100%;
     background-color: #eee;
     height: 60px;
+    cursor: pointer;
   }
 }
 
