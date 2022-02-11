@@ -417,6 +417,10 @@ body.popup-show::after {
 .info-content__image {
   margin-bottom: 0.9375rem;
 }
+.info-content__image img {
+  width: 100%;
+  height: 100%;
+}
 .info-content__socio-link:not(:last-child) {
   margin-right: 0.9375rem;
 }
