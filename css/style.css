@@ -267,11 +267,23 @@ tr {
   display: none;
 }
 
+.verbs__container-small {
+  padding: 0 0.3125rem;
+}
+
 .verbs th,
 .verbs td {
   padding: 10px 5px;
   font-weight: 400;
   text-align: center;
+  min-width: calc(33vw - 2px);
+  max-width: calc(33vw - 2px);
+}
+@media (min-width: 37.5em) {
+  .verbs th,
+.verbs td {
+    min-width: 12.5rem;
+  }
 }
 @media (max-width: 29.99875em) {
   .verbs th,
@@ -296,6 +308,11 @@ tr {
   line-height: 1.2222222222;
   margin: auto;
 }
+@media (max-width: 29.99875em) {
+  .verbs table {
+    margin: 0;
+  }
+}
 
 .verbs thead {
   background-color: #3b528b;
@@ -304,9 +321,14 @@ tr {
 
 .input__search {
   height: 40px;
-  width: 290px;
   margin: auto;
   margin-bottom: 5px;
+  width: 100%;
+}
+@media (min-width: 37.5em) {
+  .input__search {
+    width: 600px;
+  }
 }
 
 .input__search input {
@@ -315,7 +337,7 @@ tr {
   outline: none;
   padding: 0px 15px;
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #efeff0;
 }
 
 body::after {
