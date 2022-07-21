@@ -11,18 +11,8 @@
 			<section class="tense-time">
 				<div data-spollers class="tense-time__container">
 
-					<div class="spollers__item">
-						<button type="button" data-spoller class="marks__say">+</button>
-						<div class="spollers__statement"></div>
-					</div>
-					<div class="spollers__item">
-						<button type="button" data-spoller class="marks__say">-</button>
-						<div class="spollers__denial"></div>
-					</div>
-					<div class="spollers__item">
-						<button type="button" data-spoller class="marks__say">?</button>
-						<div class="spollers__question"></div>
-					</div>
+
+					@@include('html/_spollers.htm',{})
 
 					<div data-da=".spollers__statement, 767" class="grid__tense additional-padding statement">
 						<div class="grid__mark present-mark">Pr</div>

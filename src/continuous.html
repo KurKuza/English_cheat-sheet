@@ -1,183 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page page-continuous">
-				<section class="tense-time">
-					<div data-spollers class="tense-time__container">
-	
-						<div class="spollers__item">
-							<button type="button" data-spoller class="marks__say">+</button>
-							<div class="spollers__statement"></div>
-						</div>
-						<div class="spollers__item">
-							<button type="button" data-spoller class="marks__say">-</button>
-							<div class="spollers__denial"></div>
-						</div>
-						<div class="spollers__item">
-							<button type="button" data-spoller class="marks__say">?</button>
-							<div class="spollers__question"></div>
-						</div>
-	
-						<div data-da=".spollers__statement, 767" class="grid__tense additional-padding statement">
-							<div class="grid__mark present-mark">Pr</div>
-							<div class="grid__pronouns grid-3-3">
-								<div class="grid__pronouns-general">
-									I
-								</div>
-								<div class="grid__pronouns-3">
-									am
-								</div>
-								<div class="grid__verb stretching-3">Ving</div>
-								<div class="grid__pronouns-general">
-									You<br>We<br>They
-								</div>
-								<div class="grid__pronouns-3">
-									are
-								</div>
-								<div class="grid__pronouns-3">
-									He<br>She<br>It
-								</div>
-								<div class="grid__pronouns-3">
-									is
-								</div>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-continuous">
+			<section class="tense-time">
+				<div data-spollers class="tense-time__container">
+
+
+					@@include('html/_spollers.htm',{})
+
+					<div data-da=".spollers__statement, 767" class="grid__tense additional-padding statement">
+						<div class="grid__mark present-mark">Pr</div>
+						<div class="grid__pronouns grid-3-3">
+							<div class="grid__pronouns-general">
+								I
 							</div>
-						</div>
-						<div data-da=".spollers__denial, 767" class="grid__tense denial">
-							<div class="grid__mark present-mark hide-mark">Pr</div>
-							<div class="grid__pronouns grid-3-3">
-								<div class="grid__pronouns-general">
-									I
-								</div>
-								<div class="grid__pronouns-3">
-									am not
-								</div>
-								<div class="grid__verb stretching-3">Ving</div>
-								<div class="grid__pronouns-general">
-									You<br>We<br>They
-								</div>
-								<div class="grid__pronouns-3">
-									are not
-								</div>
-								<div class="grid__pronouns-3">
-									He<br>She<br>It
-								</div>
-								<div class="grid__pronouns-3">
-									is not
-								</div>
+							<div class="grid__pronouns-3">
+								am
 							</div>
-						</div>
-						<div data-da=".spollers__question, 767" class="grid__tense question">
-							<div class="grid__mark present-mark hide-mark">Pr</div>
-							<div class="grid__pronouns grid-3-3">
-								<div class="grid__pronouns-3">
-									Am
-								</div>
-								<div class="grid__pronouns-general">
-									i
-								</div>
-								<div class="grid__verb stretching-3">Ving?</div>
-								<div class="grid__pronouns-3">
-									Are
-								</div>
-								<div class="grid__pronouns-general">
-									you<br>we<br>they
-								</div>
-								<div class="grid__pronouns-3">
-									Is
-								</div>
-								<div class="grid__pronouns-3">
-									he<br>she<br>it
-								</div>
+							<div class="grid__verb stretching-3">Ving</div>
+							<div class="grid__pronouns-general">
+								You<br>We<br>They
 							</div>
-						</div>
-						<!--Pa ---------------------------------------------------------------------- -->
-						<div data-da=".spollers__statement, 767" class="grid__tense additional-padding statement">
-							<div class="grid__mark past-mark">Pa</div>
-							<div class="grid__pronouns colom-3">
-								<div class="grid__pronouns-general">
-									I<br>You<br>We<br>They
-								</div>
-								<div class="grid__word-question">was</div>
-								<div class="grid__verb stretching">Ving</div>
-								<div class="grid__pronouns-general">
-									He<br>She<br>It
-								</div>
-								<div class="grid__word-question">were</div>
+							<div class="grid__pronouns-3">
+								are
 							</div>
-						</div>
-						<div data-da=".spollers__denial, 767" class="grid__tense denial">
-							<div class="grid__mark past-mark hide-mark">Pa</div>
-							<div class="grid__pronouns colom-3">
-								<div class="grid__pronouns-general">
-									I<br>You<br>We<br>They
-								</div>
-								<div class="grid__word-question">was not</div>
-								<div class="grid__verb stretching">Ving</div>
-								<div class="grid__pronouns-general">
-									He<br>She<br>It
-								</div>
-								<div class="grid__word-question">were not</div>
+							<div class="grid__pronouns-3">
+								He<br>She<br>It
 							</div>
-						</div>
-						<div data-da=".spollers__question, 767" class="grid__tense question">
-							<div class="grid__mark past-mark hide-mark">Pa</div>
-							<div class="grid__pronouns colom-3">
-								<div class="grid__word-question">Was</div>
-								<div class="grid__pronouns-general">
-									i<br>you<br>we<br>they
-								</div>
-								<div class="grid__verb stretching">Ving?</div>
-								<div class="grid__word-question">Were</div>
-								<div class="grid__pronouns-general">
-									he<br>she<br>it
-								</div>
-							</div>
-						</div>
-						<!--Fu ---------------------------------------------------------------------- -->
-						<div data-da=".spollers__statement, 767" class="grid__tense additional-padding statement">
-							<div class="grid__mark future-mark">Fu</div>
-							<div class="grid__pronouns colom-1-3">
-								<div class="grid__pronouns-general">
-									I<br>You<br>We<br>They<br>He<br>She<br>It
-								</div>
-								<div class="grid__word-question">will be</div>
-								<div class="grid__verb">Ving</div>
-							</div>
-						</div>
-						<div data-da=".spollers__denial, 767" class="grid__tense denial">
-							<div class="grid__mark future-mark hide-mark">Fu</div>
-							<div class="grid__pronouns colom-1-3">
-								<div class="grid__pronouns-general">
-									I<br>You<br>We<br>They<br>He<br>She<br>It
-								</div>
-								<div class="grid__word-question">won't be</div>
-								<div class="grid__verb">Ving</div>
-							</div>
-						</div>
-						<div data-da=".spollers__question, 767" class="grid__tense question">
-							<div class="grid__mark future-mark hide-mark">Fu</div>
-							<div class="grid__pronouns grid-1-4">
-								<div class="grid__word-question">Will</div>
-								<div class="grid__pronouns-general">
-									i<br>you<br>we<br>they<br>he<br>she<br>it
-								</div>
-								<div class="grid__word-question">be</div>
-								<div class="grid__verb">Ving?</div>
+							<div class="grid__pronouns-3">
+								is
 							</div>
 						</div>
 					</div>
-				</section>
-	
-	
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+					<div data-da=".spollers__denial, 767" class="grid__tense denial">
+						<div class="grid__mark present-mark hide-mark">Pr</div>
+						<div class="grid__pronouns grid-3-3">
+							<div class="grid__pronouns-general">
+								I
+							</div>
+							<div class="grid__pronouns-3">
+								am not
+							</div>
+							<div class="grid__verb stretching-3">Ving</div>
+							<div class="grid__pronouns-general">
+								You<br>We<br>They
+							</div>
+							<div class="grid__pronouns-3">
+								are not
+							</div>
+							<div class="grid__pronouns-3">
+								He<br>She<br>It
+							</div>
+							<div class="grid__pronouns-3">
+								is not
+							</div>
+						</div>
+					</div>
+					<div data-da=".spollers__question, 767" class="grid__tense question">
+						<div class="grid__mark present-mark hide-mark">Pr</div>
+						<div class="grid__pronouns grid-3-3">
+							<div class="grid__pronouns-3">
+								Am
+							</div>
+							<div class="grid__pronouns-general">
+								i
+							</div>
+							<div class="grid__verb stretching-3">Ving?</div>
+							<div class="grid__pronouns-3">
+								Are
+							</div>
+							<div class="grid__pronouns-general">
+								you<br>we<br>they
+							</div>
+							<div class="grid__pronouns-3">
+								Is
+							</div>
+							<div class="grid__pronouns-3">
+								he<br>she<br>it
+							</div>
+						</div>
+					</div>
+					<!--Pa ---------------------------------------------------------------------- -->
+					<div data-da=".spollers__statement, 767" class="grid__tense additional-padding statement">
+						<div class="grid__mark past-mark">Pa</div>
+						<div class="grid__pronouns colom-3">
+							<div class="grid__pronouns-general">
+								I<br>You<br>We<br>They
+							</div>
+							<div class="grid__word-question">was</div>
+							<div class="grid__verb stretching">Ving</div>
+							<div class="grid__pronouns-general">
+								He<br>She<br>It
+							</div>
+							<div class="grid__word-question">were</div>
+						</div>
+					</div>
+					<div data-da=".spollers__denial, 767" class="grid__tense denial">
+						<div class="grid__mark past-mark hide-mark">Pa</div>
+						<div class="grid__pronouns colom-3">
+							<div class="grid__pronouns-general">
+								I<br>You<br>We<br>They
+							</div>
+							<div class="grid__word-question">was not</div>
+							<div class="grid__verb stretching">Ving</div>
+							<div class="grid__pronouns-general">
+								He<br>She<br>It
+							</div>
+							<div class="grid__word-question">were not</div>
+						</div>
+					</div>
+					<div data-da=".spollers__question, 767" class="grid__tense question">
+						<div class="grid__mark past-mark hide-mark">Pa</div>
+						<div class="grid__pronouns colom-3">
+							<div class="grid__word-question">Was</div>
+							<div class="grid__pronouns-general">
+								i<br>you<br>we<br>they
+							</div>
+							<div class="grid__verb stretching">Ving?</div>
+							<div class="grid__word-question">Were</div>
+							<div class="grid__pronouns-general">
+								he<br>she<br>it
+							</div>
+						</div>
+					</div>
+					<!--Fu ---------------------------------------------------------------------- -->
+					<div data-da=".spollers__statement, 767" class="grid__tense additional-padding statement">
+						<div class="grid__mark future-mark">Fu</div>
+						<div class="grid__pronouns colom-1-3">
+							<div class="grid__pronouns-general">
+								I<br>You<br>We<br>They<br>He<br>She<br>It
+							</div>
+							<div class="grid__word-question">will be</div>
+							<div class="grid__verb">Ving</div>
+						</div>
+					</div>
+					<div data-da=".spollers__denial, 767" class="grid__tense denial">
+						<div class="grid__mark future-mark hide-mark">Fu</div>
+						<div class="grid__pronouns colom-1-3">
+							<div class="grid__pronouns-general">
+								I<br>You<br>We<br>They<br>He<br>She<br>It
+							</div>
+							<div class="grid__word-question">won't be</div>
+							<div class="grid__verb">Ving</div>
+						</div>
+					</div>
+					<div data-da=".spollers__question, 767" class="grid__tense question">
+						<div class="grid__mark future-mark hide-mark">Fu</div>
+						<div class="grid__pronouns grid-1-4">
+							<div class="grid__word-question">Will</div>
+							<div class="grid__pronouns-general">
+								i<br>you<br>we<br>they<br>he<br>she<br>it
+							</div>
+							<div class="grid__word-question">be</div>
+							<div class="grid__verb">Ving?</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

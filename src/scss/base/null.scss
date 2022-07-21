@@ -32,7 +32,7 @@ body {
 }
 
 body {
-	color: $mainColor;
+	color: var(--textBlack);
 	line-height: 1;
 	font-family: $fontFamily;
 	font-size: $fontSize;
