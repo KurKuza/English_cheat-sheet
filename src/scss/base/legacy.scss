@@ -155,7 +155,10 @@ h6 {
 .stretching {
 	grid-row-start: span 2;
 }
-
+table {
+	background-color: var(--backgroundContent);
+	padding: 5px;
+}
 .reduction__table {
 	margin: auto;
 }
@@ -187,7 +190,7 @@ h6 {
 // :nth-child(even)
 tbody tr:nth-child(even) {
 	box-shadow: 0 1px rgba(0, 0, 0, 0.07);
-	background-color: var(--gray);
+	background-color: var(--background);
 }
 table {
 	border-collapse: collapse;
