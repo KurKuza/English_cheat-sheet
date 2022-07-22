@@ -1,4 +1,5 @@
 import cleanCss from 'gulp-clean-css';
+import {deleteAsync} from "del";
 import webpcss from 'gulp-webpcss';
 import autoprefixer from 'gulp-autoprefixer';
 import groupCssMediaQueries from 'gulp-group-css-media-queries';
@@ -40,8 +41,7 @@ export const css = () => {
 				)
 			)
 		)
-		// Раскомментировать если нужен не сжатый дубль файла стилей
-		//.pipe(app.gulp.dest(app.path.build.css))
+		.pipe(app.gulp.dest(app.path.build.css))
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
