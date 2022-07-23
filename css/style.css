@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:regular,500,700&display=swap);
+
 @charset "UTF-8";
 
 :root {
@@ -285,7 +287,7 @@ body {
 body {
   color: var(--textBlack);
   line-height: 1;
-  font-family: "Segoe UI";
+  font-family: "Noto Sans";
   font-size: 1.125rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -297,7 +299,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Segoe UI";
+  font-family: "Noto Sans";
   font-size: inherit;
 }
 
@@ -586,7 +588,7 @@ thead tr th:nth-child(3) {
   padding: 0px 15px;
   border-radius: 3px;
   background-color: var(--gray);
-  font-family: "Segoe UI";
+  font-family: "Noto Sans";
 }
 
 body::after {
@@ -742,7 +744,7 @@ body::after {
           align-items: center;
   font-size: 3rem;
   cursor: default;
-  font-family: "Segoe UI";
+  font-family: "Noto Sans";
 }
 
 .grid__tense {
