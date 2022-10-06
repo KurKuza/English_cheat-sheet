@@ -1,99 +1,103 @@
+import Spoiler from '../Components/Spoiler/Spoiler'
+import { Box } from '@mui/material'
+
 function Perfect() {
 	return (
 		<section className='tense-time'>
-			<div data-spollers className='tense-time__container'>
-				<div
+			<Box data-spollers className='tense-time__container'>
+				<Spoiler />
+				<Box
 					data-da='.spollers__statement, 767'
 					className='grid__tense additional-padding statement'>
-					<div className='grid__mark present-mark'>Pr</div>
-					<div className='grid__pronouns colom-3'>
-						<div className='grid__pronouns-general'>
+					<Box className='grid__mark present-mark'>Pr</Box>
+					<Box className='grid__pronouns colom-3'>
+						<Box className='grid__pronouns-general'>
 							I<br />
 							You
 							<br />
 							We
 							<br />
 							They
-						</div>
-						<div className='grid__word-question'>have</div>
-						<div className='grid__verb stretching'>
+						</Box>
+						<Box className='grid__word-question'>have</Box>
+						<Box className='grid__verb stretching'>
 							Ved
 							<br />
 							V3
-						</div>
-						<div className='grid__pronouns-general'>
+						</Box>
+						<Box className='grid__pronouns-general'>
 							He
 							<br />
 							She
 							<br />
 							It
-						</div>
-						<div className='grid__word-question'>has</div>
-					</div>
-				</div>
-				<div data-da='.spollers__denial, 767' className='grid__tense denial'>
-					<div className='grid__mark present-mark hide-mark'>Pr</div>
-					<div className='grid__pronouns colom-3'>
-						<div className='grid__pronouns-general'>
+						</Box>
+						<Box className='grid__word-question'>has</Box>
+					</Box>
+				</Box>
+				<Box data-da='.spollers__denial, 767' className='grid__tense denial'>
+					<Box className='grid__mark present-mark hide-mark'>Pr</Box>
+					<Box className='grid__pronouns colom-3'>
+						<Box className='grid__pronouns-general'>
 							I<br />
 							You
 							<br />
 							We
 							<br />
 							They
-						</div>
-						<div className='grid__word-question'>have not</div>
-						<div className='grid__verb stretching'>
+						</Box>
+						<Box className='grid__word-question'>have not</Box>
+						<Box className='grid__verb stretching'>
 							Ved
 							<br />
 							V3
-						</div>
-						<div className='grid__pronouns-general'>
+						</Box>
+						<Box className='grid__pronouns-general'>
 							He
 							<br />
 							She
 							<br />
 							It
-						</div>
-						<div className='grid__word-question'>has not</div>
-					</div>
-				</div>
-				<div
+						</Box>
+						<Box className='grid__word-question'>has not</Box>
+					</Box>
+				</Box>
+				<Box
 					data-da='.spollers__question, 767'
 					className='grid__tense question'>
-					<div className='grid__mark present-mark hide-mark'>Pr</div>
-					<div className='grid__pronouns colom-3'>
-						<div className='grid__word-question'>Have</div>
-						<div className='grid__pronouns-general'>
+					<Box className='grid__mark present-mark hide-mark'>Pr</Box>
+					<Box className='grid__pronouns colom-3'>
+						<Box className='grid__word-question'>Have</Box>
+						<Box className='grid__pronouns-general'>
 							i<br />
 							you
 							<br />
 							we
 							<br />
 							they
-						</div>
-						<div className='grid__verb stretching'>
+						</Box>
+						<Box className='grid__verb stretching'>
 							Ved
 							<br />
 							V3?
-						</div>
-						<div className='grid__word-question'>Has</div>
-						<div className='grid__pronouns-general'>
+						</Box>
+						<Box className='grid__word-question'>Has</Box>
+						<Box className='grid__pronouns-general'>
 							he
 							<br />
 							she
 							<br />
 							it
-						</div>
-					</div>
-				</div>
+						</Box>
+					</Box>
+				</Box>
 				{/*Pa ---------------------------------------------------------------------- */}
-				<div
+				<Box
 					data-da='.spollers__statement, 767'
 					className='grid__tense additional-padding statement'>
-					<div className='grid__mark past-mark'>Pa</div>
-					<div className='grid__pronouns colom-1-3'>
-						<div className='grid__pronouns-general'>
+					<Box className='grid__mark past-mark'>Pa</Box>
+					<Box className='grid__pronouns colom-1-3'>
+						<Box className='grid__pronouns-general'>
 							I<br />
 							You
 							<br />
@@ -106,19 +110,19 @@ function Perfect() {
 							She
 							<br />
 							It
-						</div>
-						<div className='grid__word-question'>had</div>
-						<div className='grid__verb'>
+						</Box>
+						<Box className='grid__word-question'>had</Box>
+						<Box className='grid__verb'>
 							Ved
 							<br />
 							V3
-						</div>
-					</div>
-				</div>
-				<div data-da='.spollers__denial, 767' className='grid__tense denial'>
-					<div className='grid__mark past-mark hide-mark'>Pa</div>
-					<div className='grid__pronouns colom-1-3'>
-						<div className='grid__pronouns-general'>
+						</Box>
+					</Box>
+				</Box>
+				<Box data-da='.spollers__denial, 767' className='grid__tense denial'>
+					<Box className='grid__mark past-mark hide-mark'>Pa</Box>
+					<Box className='grid__pronouns colom-1-3'>
+						<Box className='grid__pronouns-general'>
 							I<br />
 							You
 							<br />
@@ -131,22 +135,22 @@ function Perfect() {
 							She
 							<br />
 							It
-						</div>
-						<div className='grid__word-question'>had not</div>
-						<div className='grid__verb'>
+						</Box>
+						<Box className='grid__word-question'>had not</Box>
+						<Box className='grid__verb'>
 							Ved
 							<br />
 							V3
-						</div>
-					</div>
-				</div>
-				<div
+						</Box>
+					</Box>
+				</Box>
+				<Box
 					data-da='.spollers__question, 767'
 					className='grid__tense question'>
-					<div className='grid__mark past-mark hide-mark'>Pa</div>
-					<div className='grid__pronouns colom-1-3'>
-						<div className='grid__word-question'>Had</div>
-						<div className='grid__pronouns-general'>
+					<Box className='grid__mark past-mark hide-mark'>Pa</Box>
+					<Box className='grid__pronouns colom-1-3'>
+						<Box className='grid__word-question'>Had</Box>
+						<Box className='grid__pronouns-general'>
 							i<br />
 							you
 							<br />
@@ -159,21 +163,21 @@ function Perfect() {
 							she
 							<br />
 							it
-						</div>
-						<div className='grid__verb'>
+						</Box>
+						<Box className='grid__verb'>
 							Ved
 							<br />
 							V3?
-						</div>
-					</div>
-				</div>
+						</Box>
+					</Box>
+				</Box>
 				{/*Fu ---------------------------------------------------------------------- */}
-				<div
+				<Box
 					data-da='.spollers__statement, 767'
 					className='grid__tense additional-padding statement'>
-					<div className='grid__mark future-mark'>Fu</div>
-					<div className='grid__pronouns colom-1-3'>
-						<div className='grid__pronouns-general'>
+					<Box className='grid__mark future-mark'>Fu</Box>
+					<Box className='grid__pronouns colom-1-3'>
+						<Box className='grid__pronouns-general'>
 							I<br />
 							You
 							<br />
@@ -186,19 +190,19 @@ function Perfect() {
 							She
 							<br />
 							It
-						</div>
-						<div className='grid__word-question'>will have</div>
-						<div className='grid__verb'>
+						</Box>
+						<Box className='grid__word-question'>will have</Box>
+						<Box className='grid__verb'>
 							Ved
 							<br />
 							V3
-						</div>
-					</div>
-				</div>
-				<div data-da='.spollers__denial, 767' className='grid__tense denial'>
-					<div className='grid__mark future-mark hide-mark'>Fu</div>
-					<div className='grid__pronouns colom-1-3'>
-						<div className='grid__pronouns-general'>
+						</Box>
+					</Box>
+				</Box>
+				<Box data-da='.spollers__denial, 767' className='grid__tense denial'>
+					<Box className='grid__mark future-mark hide-mark'>Fu</Box>
+					<Box className='grid__pronouns colom-1-3'>
+						<Box className='grid__pronouns-general'>
 							I<br />
 							You
 							<br />
@@ -211,22 +215,22 @@ function Perfect() {
 							She
 							<br />
 							It
-						</div>
-						<div className='grid__word-question'>won't have</div>
-						<div className='grid__verb'>
+						</Box>
+						<Box className='grid__word-question'>won't have</Box>
+						<Box className='grid__verb'>
 							Ved
 							<br />
 							V3
-						</div>
-					</div>
-				</div>
-				<div
+						</Box>
+					</Box>
+				</Box>
+				<Box
 					data-da='.spollers__question, 767'
 					className='grid__tense question'>
-					<div className='grid__mark future-mark hide-mark'>Fu</div>
-					<div className='grid__pronouns grid-1-4'>
-						<div className='grid__word-question'>Will</div>
-						<div className='grid__pronouns-general'>
+					<Box className='grid__mark future-mark hide-mark'>Fu</Box>
+					<Box className='grid__pronouns grid-1-4'>
+						<Box className='grid__word-question'>Will</Box>
+						<Box className='grid__pronouns-general'>
 							i<br />
 							you
 							<br />
@@ -239,16 +243,16 @@ function Perfect() {
 							she
 							<br />
 							it
-						</div>
-						<div className='grid__word-question'>have</div>
-						<div className='grid__verb'>
+						</Box>
+						<Box className='grid__word-question'>have</Box>
+						<Box className='grid__verb'>
 							Ved
 							<br />
 							V3?
-						</div>
-					</div>
-				</div>
-			</div>
+						</Box>
+					</Box>
+				</Box>
+			</Box>
 		</section>
 	)
 }

@@ -1,0 +1,190 @@
+[
+	{
+		"full": "I am",
+		"reduced": "I'm"
+	},
+	{
+		"full": "I have",
+		"reduced": "I've"
+	},
+	{
+		"full": "I will",
+		"reduced": "I'll"
+	},
+	{
+		"full": "I had / I would",
+		"reduced": "I'd"
+	},
+	{
+		"full": "You are",
+		"reduced": "You're"
+	},
+	{
+		"full": "You have",
+		"reduced": "You've"
+	},
+	{
+		"full": "You will",
+		"reduced": "You'll"
+	},
+	{
+		"full": "You had / you would",
+		"reduced": "You'd"
+	},
+	{
+		"full": "He is / he has",
+		"reduced": "He's"
+	},
+	{
+		"full": "He will",
+		"reduced": "He'll"
+	},
+	{
+		"full": "He had / he would",
+		"reduced": "He'd"
+	},
+	{
+		"full": "She is / she has",
+		"reduced": "She's"
+	},
+	{
+		"full": "She will",
+		"reduced": "She'll"
+	},
+	{
+		"full": "She had / she would",
+		"reduced": "She'd"
+	},
+	{
+		"full": "It is / it has",
+		"reduced": "It's"
+	},
+	{
+		"full": "We are",
+		"reduced": "We're"
+	},
+	{
+		"full": "We have",
+		"reduced": "We've"
+	},
+	{
+		"full": "We will",
+		"reduced": "We'll"
+	},
+	{
+		"full": "We had / we would",
+		"reduced": "We'd"
+	},
+	{
+		"full": "They are",
+		"reduced": "They're"
+	},
+	{
+		"full": "They have",
+		"reduced": "They've"
+	},
+	{
+		"full": "They will",
+		"reduced": "They'll"
+	},
+	{
+		"full": "They had / they would",
+		"reduced": "They'd"
+	},
+	{
+		"full": "There is / there has",
+		"reduced": "There's"
+	},
+	{
+		"full": "There will",
+		"reduced": "There'll"
+	},
+	{
+		"full": "There had / there would",
+		"reduced": "There'd"
+	},
+	{
+		"full": "Are not",
+		"reduced": "Aren't"
+	},
+	{
+		"full": "Cannot",
+		"reduced": "Can't"
+	},
+	{
+		"full": "Could not",
+		"reduced": "Couldn't"
+	},
+	{
+		"full": "Dare not",
+		"reduced": "Daren't"
+	},
+	{
+		"full": "Did not",
+		"reduced": "Didn't"
+	},
+	{
+		"full": "Does not",
+		"reduced": "Doesn't"
+	},
+	{
+		"full": "Do not",
+		"reduced": "Don't"
+	},
+	{
+		"full": "Had not",
+		"reduced": "Hadn't"
+	},
+	{
+		"full": "Has not",
+		"reduced": "Hasn't"
+	},
+	{
+		"full": "Have not",
+		"reduced": "Haven't"
+	},
+	{
+		"full": "Is not",
+		"reduced": "Isn't"
+	},
+	{
+		"full": "Might not",
+		"reduced": "Mightn't"
+	},
+	{
+		"full": "Must not",
+		"reduced": "Mustn't"
+	},
+	{
+		"full": "Need not",
+		"reduced": "Needn't"
+	},
+	{
+		"full": "Ought not",
+		"reduced": "Oughtn't"
+	},
+	{
+		"full": "Shall not",
+		"reduced": "Shan't"
+	},
+	{
+		"full": "Should not",
+		"reduced": "Shouldn't"
+	},
+	{
+		"full": "Was not",
+		"reduced": "Wasn't"
+	},
+	{
+		"full": "Were not",
+		"reduced": "Weren't"
+	},
+	{
+		"full": "Will not",
+		"reduced": "Won't"
+	},
+	{
+		"full": "Would not",
+		"reduced": "Wouldn't"
+	}
+]

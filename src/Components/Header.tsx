@@ -1,6 +1,7 @@
 import { Button } from '@mui/material'
 import { FunctionComponent } from 'preact'
 import { Link, Outlet } from 'react-router-dom'
+import { Box } from '@mui/material'
 
 const pages = [
 	{ name: 'Main', path: '/' },
@@ -17,8 +18,8 @@ export const Header: FunctionComponent = () => {
 	return (
 		<>
 			<header className='header'>
-				<div className='header__container'>
-					<div className='header__menu menu'>
+				<Box className='header__container'>
+					<Box className='header__menu menu'>
 						<nav className='menu__body'>
 							<ul className='menu__list'>
 								{pages.map((page) => (
@@ -44,8 +45,8 @@ export const Header: FunctionComponent = () => {
 								<span />
 							</button>
 						</nav>
-					</div>
-				</div>
+					</Box>
+				</Box>
 			</header>
 			<Outlet />
 		</>
