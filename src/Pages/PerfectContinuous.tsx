@@ -31,7 +31,7 @@ function PerfectContinuous() {
 						<Box className='grid__word-question'>has been</Box>
 					</Box>
 				</Box>
-				<Box data-da='.spollers__denial, 767' className='grid__tense denial'>
+				<Box className='grid__tense denial'>
 					<Box className='grid__mark present-mark hide-mark'>Pr</Box>
 					<Box className='grid__pronouns colom-3'>
 						<Box className='grid__pronouns-general'>
@@ -104,7 +104,7 @@ function PerfectContinuous() {
 						<Box className='grid__verb'>Ving</Box>
 					</Box>
 				</Box>
-				<Box data-da='.spollers__denial, 767' className='grid__tense denial'>
+				<Box className='grid__tense denial'>
 					<Box className='grid__mark past-mark hide-mark'>Pa</Box>
 					<Box className='grid__pronouns colom-1-3'>
 						<Box className='grid__pronouns-general'>
@@ -173,7 +173,7 @@ function PerfectContinuous() {
 						<Box className='grid__verb'>Ving</Box>
 					</Box>
 				</Box>
-				<Box data-da='.spollers__denial, 767' className='grid__tense denial'>
+				<Box className='grid__tense denial'>
 					<Box className='grid__mark future-mark hide-mark'>Fu</Box>
 					<Box className='grid__pronouns colom-1-3'>
 						<Box className='grid__pronouns-general'>

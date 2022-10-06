@@ -19,6 +19,23 @@ export default function (
 			},
 		],
 	}),
+		plop.setGenerator('time', {
+			description: 'this is a skeleton plopfile',
+			prompts: [
+				{
+					type: 'input',
+					name: 'name',
+					message: 'Name your resource: ',
+				},
+			],
+			actions: [
+				{
+					type: 'add',
+					path: 'src/Out/{{titleCase name}}.tsx',
+					templateFile: 'templates/time.template.hbs',
+				},
+			],
+		}),
 		plop.setGenerator('component', {
 			description: 'this is a skeleton plopfile',
 			prompts: [

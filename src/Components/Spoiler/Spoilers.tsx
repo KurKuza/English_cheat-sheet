@@ -5,12 +5,12 @@ import { AccordionContainer } from './styles/Accordion'
 import { AccordionSummaryC } from './styles/AccordionSummaryC'
 
 type SpoilersProps = {
-	statements: ReactJSXElement
+	statement: ReactJSXElement
 	denial: ReactJSXElement
 	quention: ReactJSXElement
 }
 const Spoilers: FunctionComponent<SpoilersProps> = ({
-	statements,
+	statement: statement,
 	denial,
 	quention,
 }) => {
@@ -18,7 +18,7 @@ const Spoilers: FunctionComponent<SpoilersProps> = ({
 		<Fragment>
 			<AccordionContainer disableGutters expanded>
 				<AccordionSummaryC aria-controls='panel1a-content'>+</AccordionSummaryC>
-				<AccordionDetails>{statements}</AccordionDetails>
+				<AccordionDetails>{statement}</AccordionDetails>
 			</AccordionContainer>
 			<AccordionContainer disableGutters expanded>
 				<AccordionSummaryC aria-controls='panel1a-content'>-</AccordionSummaryC>

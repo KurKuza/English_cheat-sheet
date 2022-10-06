@@ -6,7 +6,7 @@ function Simple() {
 		<section className='tense-time'>
 			<div data-spollers className='tense-time__container'>
 				<Spoilers
-					statements={<Statement />}
+					statement={<Statement />}
 					denial={<Denial />}
 					quention={<Question />}
 				/>
@@ -40,7 +40,7 @@ const Statement: FunctionComponent = () => {
 					<div className='grid__verb'>Vs</div>
 				</div>
 			</div>
-			<div data-da='.spollers__denial, 767' className='grid__tense denial'>
+			<div className='grid__tense denial'>
 				<div className='grid__mark present-mark hide-mark'>Pr</div>
 				<div className='grid__pronouns colom-3'>
 					<div className='grid__pronouns-general'>
@@ -63,7 +63,7 @@ const Statement: FunctionComponent = () => {
 					<div className='grid__denial'>doesn't</div>
 				</div>
 			</div>
-			<div data-da='.spollers__question, 767' className='grid__tense question'>
+			<div className='grid__tense question'>
 				<div className='grid__mark present-mark hide-mark'>Pr</div>
 				<div className='grid__pronouns colom-3'>
 					<div className='grid__word-question'>Do</div>
@@ -117,7 +117,7 @@ const Denial: FunctionComponent = () => {
 					</div>
 				</div>
 			</div>
-			<div data-da='.spollers__denial, 767' className='grid__tense denial'>
+			<div className='grid__tense denial'>
 				<div className='grid__mark past-mark hide-mark'>Pa</div>
 				<div className='grid__pronouns colom-1-3'>
 					<div className='grid__pronouns-general'>
@@ -138,7 +138,7 @@ const Denial: FunctionComponent = () => {
 					<div className='grid__verb'>V</div>
 				</div>
 			</div>
-			<div data-da='.spollers__question, 767' className='grid__tense question'>
+			<div className='grid__tense question'>
 				<div className='grid__mark past-mark hide-mark'>Pa</div>
 				<div className='grid__pronouns colom-1-3'>
 					<div className='grid__word-question'>Did</div>
@@ -187,7 +187,7 @@ const Question: FunctionComponent = () => {
 					<div className='grid__verb'>Ved</div>
 				</div>
 			</div>
-			<div data-da='.spollers__denial, 767' className='grid__tense denial'>
+			<div className='grid__tense denial'>
 				<div className='grid__mark future-mark hide-mark'>Fu</div>
 				<div className='grid__pronouns colom-1-3'>
 					<div className='grid__pronouns-general'>
@@ -208,7 +208,7 @@ const Question: FunctionComponent = () => {
 					<div className='grid__verb'>V</div>
 				</div>
 			</div>
-			<div data-da='.spollers__question, 767' className='grid__tense question'>
+			<div className='grid__tense question'>
 				<div className='grid__mark future-mark hide-mark'>Fu</div>
 				<div className='grid__pronouns colom-1-3'>
 					<div className='grid__word-question'>Will</div>

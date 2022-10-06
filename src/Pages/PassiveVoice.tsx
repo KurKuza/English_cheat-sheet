@@ -28,7 +28,7 @@ const PassiveVoice: FunctionComponent = () => {
 							</Box>
 						</Box>
 					</Box> */}
-					<Box data-da='.spollers__denial, 767' className='grid__tense denial'>
+					<Box className='grid__tense denial'>
 						<Box className='grid__mark present-mark hide-mark'>Pr</Box>
 						<Box className='grid__pronouns colom-1-3'>
 							<Box className='grid__pronouns-general'>
@@ -82,7 +82,7 @@ const PassiveVoice: FunctionComponent = () => {
 							</Box>
 						</Box>
 					</Box> */}
-					<Box data-da='.spollers__denial, 767' className='grid__tense denial'>
+					<Box className='grid__tense denial'>
 						<Box className='grid__mark past-mark hide-mark'>Pa</Box>
 						<Box className='grid__pronouns colom-1-3'>
 							<Box className='grid__pronouns-general'>
@@ -137,7 +137,6 @@ export function Statement() {
 	return (
 		<>
 			<Box
-				data-da='.spollers__statement, 767'
 				className='grid__tense additional-padding statement'>
 				<Box className='grid__mark present-mark'>Pr</Box>
 				<Box className='grid__pronouns grid__1-2'>
@@ -156,7 +155,6 @@ export function Statement() {
 				</Box>
 			</Box>
 			<Box
-				data-da='.spollers__statement, 767'
 				className='grid__tense additional-padding statement'>
 				<Box className='grid__mark past-mark'>Pa</Box>
 				<Box className='grid__pronouns grid__1-2'>
@@ -173,7 +171,6 @@ export function Statement() {
 				</Box>
 			</Box>
 			<Box
-				data-da='.spollers__statement, 767'
 				className='grid__tense additional-padding statement'>
 				<Box className='grid__mark future-mark'>Fu</Box>
 				<Box className='grid__pronouns grid__1-2'>
