@@ -7,7 +7,7 @@ function PerfectContinuous() {
 			<Box data-spollers className='tense-time__container'>
 				<Spoiler />
 				<Box
-					data-da='.spollers__statement, 767'
+					
 					className='grid__tense additional-padding statement'>
 					<Box className='grid__mark present-mark'>Pr</Box>
 					<Box className='grid__pronouns colom-3'>
@@ -82,7 +82,7 @@ function PerfectContinuous() {
 				</Box>
 				{/*Pa ---------------------------------------------------------------------- */}
 				<Box
-					data-da='.spollers__statement, 767'
+					
 					className='grid__tense additional-padding statement'>
 					<Box className='grid__mark past-mark'>Pa</Box>
 					<Box className='grid__pronouns colom-1-3'>
@@ -151,7 +151,7 @@ function PerfectContinuous() {
 				</Box>
 				{/*Fu ---------------------------------------------------------------------- */}
 				<Box
-					data-da='.spollers__statement, 767'
+					
 					className='grid__tense additional-padding statement'>
 					<Box className='grid__mark future-mark'>Fu</Box>
 					<Box className='grid__pronouns colom-1-3'>

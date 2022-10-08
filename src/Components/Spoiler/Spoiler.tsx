@@ -32,7 +32,7 @@ const Spoiler: FunctionComponent = (props) => {
 				</AccordionSummaryContainer>
 				<AccordionDetails>
 					<Box
-						data-da='.spollers__statement, 767'
+						
 						className='grid__tense additional-padding statement'>
 						<Box className='grid__mark present-mark'>Pr</Box>
 						<Box className='grid__pronouns grid-3-3'>
