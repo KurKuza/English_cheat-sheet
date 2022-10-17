@@ -11,16 +11,17 @@ import Drawer from '@mui/material/Drawer'
 import { Fragment } from 'preact'
 import { Link, Outlet } from 'react-router-dom'
 import { AppBarC } from './styles/AppBarC'
+import baseroute from '../../baseroute'
 
 const pages = [
-  { name: 'Main', path: '/' },
-  { name: 'Simple', path: '/simple' },
-  { name: 'Continuous', path: '/continuous' },
-  { name: 'Perfect', path: '/perfect' },
-  { name: 'Perfect Continuous', path: '/perfectContinuous' },
-  { name: 'Passive voice', path: '/passiveVoice' },
-  { name: 'Irregular verbs', path: '/irregularVerbs' },
-  { name: 'Reduction', path: '/reduction' },
+  { name: 'Main', path: `${baseroute}/` },
+  { name: 'Simple', path: `${baseroute}/simple` },
+  { name: 'Continuous', path: `${baseroute}/continuous` },
+  { name: 'Perfect', path: `${baseroute}/perfect` },
+  { name: 'Perfect Continuous', path: `${baseroute}/perfectContinuous` },
+  { name: 'Passive voice', path: `${baseroute}/passiveVoice` },
+  { name: 'Irregular verbs', path: `${baseroute}/irregularVerbs` },
+  { name: 'Reduction', path: `${baseroute}/reduction` },
 ]
 export function Header() {
   const [open, setState] = useState(false)

@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://kurkuza.github.io/English_cheat-sheet",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "build:gh": "GITHUB_PAGES=English_cheat-sheet preact build && dot-json ./build/manifest.json start_url \"/English_cheat-sheet/\"",
     "preview": "vite preview",
     "component": "generate-react component",
     "gen": "plop"
@@ -15,6 +17,7 @@
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
     "@mui/material": "^5.10.7",
+    "dot-json": "^1.2.2",
     "preact": "^10.10.1",
     "react-router-dom": "^6.3.0"
   },
@@ -31,6 +34,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-simple-import-sort": "^8.0.0",
+    "gh-pages": "^4.0.0",
     "jest": "^29.1.2",
     "plop": "^3.1.1",
     "prettier": "^2.7.1",
