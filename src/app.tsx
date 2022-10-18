@@ -6,6 +6,7 @@ import './app.css'
 
 import { Header } from './Components/Header/Header'
 import Continuous from './Pages/Continuous'
+import GlueWords from './Pages/GlueWords'
 import Home from './Pages/Home'
 import IrregularVerbs from './Pages/IrregularVerbs'
 import PassiveVoice from './Pages/PassiveVoice'
@@ -40,7 +41,8 @@ export function App() {
           <Route path='/perfectContinuous' element={<PerfectContinuous />} />
           <Route path='/passiveVoice' element={<PassiveVoice />} />
           <Route path='/irregularVerbs' element={<IrregularVerbs />} />
-          <Route path='/Reduction' element={<Reduction />} />
+          <Route path='/reduction' element={<Reduction />} />
+          <Route path='/glueWords' element={<GlueWords />} />
         </Route>
       </Routes>
     </ThemeProvider>
