@@ -13,7 +13,6 @@ import Perfect from './Pages/Perfect'
 import PerfectContinuous from './Pages/PerfectContinuous'
 import Reduction from './Pages/Reduction'
 import Simple from './Pages/Simple'
-import baseroute from './baseroute'
 
 export function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
@@ -23,7 +22,7 @@ export function App() {
       mode: 'light',
     },
   }
-  /*  */
+
   const dark = {
     palette: {
       mode: 'dark',
@@ -33,15 +32,15 @@ export function App() {
     <ThemeProvider theme={isDarkTheme ? createTheme(dark) : createTheme(light)}>
       {/* <CssBaseline /> */}
       <Routes>
-        <Route path={`${baseroute}/`} element={<Header />}>
-          <Route path={`${baseroute}`} element={<Home />} />
-          <Route path={`${baseroute}/simple`} element={<Simple />} />
-          <Route path={`${baseroute}/continuous`} element={<Continuous />} />
-          <Route path={`${baseroute}/perfect`} element={<Perfect />} />
-          <Route path={`${baseroute}/perfectContinuous`} element={<PerfectContinuous />} />
-          <Route path={`${baseroute}/passiveVoice`} element={<PassiveVoice />} />
-          <Route path={`${baseroute}/irregularVerbs`} element={<IrregularVerbs />} />
-          <Route path={`${baseroute}/Reduction`} element={<Reduction />} />
+        <Route path='/' element={<Header />}>
+          <Route path='' element={<Home />} />
+          <Route path='/simple' element={<Simple />} />
+          <Route path='/continuous' element={<Continuous />} />
+          <Route path='/perfect' element={<Perfect />} />
+          <Route path='/perfectContinuous' element={<PerfectContinuous />} />
+          <Route path='/passiveVoice' element={<PassiveVoice />} />
+          <Route path='/irregularVerbs' element={<IrregularVerbs />} />
+          <Route path='/Reduction' element={<Reduction />} />
         </Route>
       </Routes>
     </ThemeProvider>
