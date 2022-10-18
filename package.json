@@ -7,7 +7,6 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "build:gh": "GITHUB_PAGES=English_cheat-sheet preact build && dot-json ./build/manifest.json start_url \"/English_cheat-sheet/\"",
     "preview": "vite preview",
     "component": "generate-react component",
     "gen": "plop"
