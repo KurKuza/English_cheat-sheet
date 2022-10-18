@@ -972,10 +972,6 @@ body.popup-show::after {
     right: -96px;
   }
 
-  .menu__list {
-    display: none;
-  }
-
   .menu-open .menu__list {
     display: flex;
     z-index: 10;
