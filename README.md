@@ -2,9 +2,7 @@
 
 This is a cheat sheet that is first of all ready to remind the forgotten, then teach a new one
 
-## Development
-
-Currently being rewritten on Preact
+## Connection
 
 for questions and suggestions, you can write here:
 
