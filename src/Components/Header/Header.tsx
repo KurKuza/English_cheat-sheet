@@ -7,6 +7,7 @@ import Drawer from '@mui/material/Drawer'
 import { Fragment } from 'preact'
 import { Link, Outlet } from 'react-router-dom'
 import { AppBarC } from './styles/AppBarC'
+import { useIsTablet } from '../../Hooks/useIsTablet'
 
 const pages: { name: string; path: string }[] = [
   { name: 'Main', path: '/' },
@@ -20,12 +21,9 @@ const pages: { name: string; path: string }[] = [
   { name: 'Glue words', path: '/glueWords' },
 ]
 export function Header() {
+  const isTablet = useIsTablet()
   const [open, setState] = useState(false)
-  const [isTablet, setIsTablet] = useState(false)
 
-  if (window.innerWidth <= 768) {
-    setIsTablet(true)
-  }
   const toggleDrawer = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return

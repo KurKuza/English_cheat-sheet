@@ -2,8 +2,6 @@ import { FunctionComponent } from 'preact'
 import GlueWordsList from '../Db/GlueWordsList.json'
 import { Box } from '@mui/material'
 
-console.log('GlueWordsList', GlueWordsList.words)
-
 const GlueWords: FunctionComponent = () => {
   return (
     <main className='page page-verbs'>
