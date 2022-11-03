@@ -41,7 +41,7 @@ const Statement: FunctionComponent = () => {
             It
           </Box>
           <Box className='grid__word-question'>has</Box>
-          <VerbTimeline src='public/assets/icons/perfectPresent.svg' />
+          <VerbTimeline src='assets/icons/perfectPresent.svg' />
         </Box>
       </Box>
 
@@ -69,7 +69,7 @@ const Statement: FunctionComponent = () => {
             V3
           </Box>
         </Box>
-        <VerbTimeline src='public/assets/icons/perfectPast.svg' />
+        <VerbTimeline src='assets/icons/perfectPast.svg' />
       </Box>
 
       <Box className='grid__tense additional-padding statement'>
@@ -96,7 +96,7 @@ const Statement: FunctionComponent = () => {
             V3
           </Box>
         </Box>
-        <VerbTimeline src='public/assets/icons/perfectFuture.svg' />
+        <VerbTimeline src='assets/icons/perfectFuture.svg' />
       </Box>
     </Fragment>
   )
