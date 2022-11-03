@@ -32,6 +32,7 @@ const Statement: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
+
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark past-mark'>Pa</Box>
         <Box className='grid__pronouns grid__1-2'>
@@ -47,6 +48,7 @@ const Statement: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
+
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark future-mark'>Fu</Box>
         <Box className='grid__pronouns grid__1-2'>
@@ -83,6 +85,7 @@ const Denial: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
+
       <Box className='grid__tense denial'>
         <Box className='grid__mark past-mark hide-mark'>Pa</Box>
         <Box className='grid__pronouns colom-1-3'>
@@ -122,6 +125,7 @@ const Question: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
+
       <Box className='grid__tense question'>
         <Box className='grid__mark past-mark hide-mark'>Pa</Box>
         <Box className='grid__pronouns colom-1-3'>

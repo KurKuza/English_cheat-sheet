@@ -1,6 +1,7 @@
 import { Box } from '@mui/system'
 import { Fragment, FunctionComponent } from 'preact'
 import Spoilers from '../Components/Spoiler/Spoilers'
+import VerbTimeline from '../Components/VerbTimeline/Verbtimeline'
 
 const perfect: FunctionComponent = () => {
   return (
@@ -40,8 +41,10 @@ const Statement: FunctionComponent = () => {
             It
           </Box>
           <Box className='grid__word-question'>has</Box>
+          <VerbTimeline src='public/assets/icons/perfectPresent.svg' />
         </Box>
       </Box>
+
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark past-mark'>Pa</Box>
         <Box className='grid__pronouns colom-1-3'>
@@ -66,7 +69,9 @@ const Statement: FunctionComponent = () => {
             V3
           </Box>
         </Box>
+        <VerbTimeline src='public/assets/icons/perfectPast.svg' />
       </Box>
+
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark future-mark'>Fu</Box>
         <Box className='grid__pronouns colom-1-3'>
@@ -91,6 +96,7 @@ const Statement: FunctionComponent = () => {
             V3
           </Box>
         </Box>
+        <VerbTimeline src='public/assets/icons/perfectFuture.svg' />
       </Box>
     </Fragment>
   )
@@ -126,6 +132,7 @@ const Denial: FunctionComponent = () => {
           <Box className='grid__word-question'>has not</Box>
         </Box>
       </Box>
+
       <Box className='grid__tense denial'>
         <Box className='grid__mark past-mark hide-mark'>Pa</Box>
         <Box className='grid__pronouns colom-1-3'>
@@ -151,6 +158,7 @@ const Denial: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
+
       <Box className='grid__tense denial'>
         <Box className='grid__mark future-mark hide-mark'>Fu</Box>
         <Box className='grid__pronouns colom-1-3'>
@@ -183,7 +191,7 @@ const Denial: FunctionComponent = () => {
 const Question: FunctionComponent = () => {
   return (
     <Fragment>
-      <Box  className='grid__tense question'>
+      <Box className='grid__tense question'>
         <Box className='grid__mark present-mark hide-mark'>Pr</Box>
         <Box className='grid__pronouns colom-3'>
           <Box className='grid__word-question'>Have</Box>
@@ -210,7 +218,8 @@ const Question: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
-      <Box  className='grid__tense question'>
+
+      <Box className='grid__tense question'>
         <Box className='grid__mark past-mark hide-mark'>Pa</Box>
         <Box className='grid__pronouns colom-1-3'>
           <Box className='grid__word-question'>Had</Box>
@@ -235,7 +244,8 @@ const Question: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
-      <Box  className='grid__tense question'>
+
+      <Box className='grid__tense question'>
         <Box className='grid__mark future-mark hide-mark'>Fu</Box>
         <Box className='grid__pronouns grid-1-4'>
           <Box className='grid__word-question'>Will</Box>

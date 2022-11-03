@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import { Fragment, FunctionComponent } from 'preact'
 import Spoilers from '../Components/Spoiler/Spoilers'
+import VerbTimeline from '../Components/VerbTimeline/Verbtimeline'
 
 function Simple() {
   return (
@@ -36,7 +37,9 @@ const Statement: FunctionComponent = () => {
           </Box>
           <Box className='grid__verb'>Vs</Box>
         </Box>
+        <VerbTimeline src='public/assets/icons/simplePresent.svg' />
       </Box>
+
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark past-mark'>Pa</Box>
         <Box className='grid__pronouns colom-1'>
@@ -60,7 +63,9 @@ const Statement: FunctionComponent = () => {
             <span>V2</span>
           </Box>
         </Box>
+        <VerbTimeline src='public/assets/icons/simplePast.svg' />
       </Box>
+
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark future-mark'>Fu</Box>
         <Box className='grid__pronouns colom-1-3'>
@@ -81,6 +86,7 @@ const Statement: FunctionComponent = () => {
           <Box className='grid__word-question'>will</Box>
           <Box className='grid__verb'>Ved</Box>
         </Box>
+        <VerbTimeline src='public/assets/icons/simpleFuture.svg' />
       </Box>
     </Fragment>
   )
@@ -134,6 +140,7 @@ const Denial: FunctionComponent = () => {
           <Box className='grid__verb'>V</Box>
         </Box>
       </Box>
+
       <Box className='grid__tense denial'>
         <Box className='grid__mark future-mark hide-mark'>Fu</Box>
         <Box className='grid__pronouns colom-1-3'>
@@ -185,6 +192,7 @@ const Question: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
+
       <Box className='grid__tense question'>
         <Box className='grid__mark past-mark hide-mark'>Pa</Box>
         <Box className='grid__pronouns colom-1-3'>

@@ -1,6 +1,7 @@
 import { Box } from '@mui/system'
 import { Fragment, FunctionComponent } from 'preact'
 import Spoilers from '../Components/Spoiler/Spoilers'
+import VerbTimeline from '../Components/VerbTimeline/Verbtimeline'
 
 const continuous: FunctionComponent = () => {
   return (
@@ -38,6 +39,7 @@ const Statement: FunctionComponent = () => {
           </Box>
           <Box className='grid__pronouns-3'>is</Box>
         </Box>
+        <VerbTimeline src='public/assets/icons/continuousPresent.svg' />
       </Box>
 
       <Box className='grid__tense additional-padding statement'>
@@ -61,6 +63,7 @@ const Statement: FunctionComponent = () => {
             It
           </Box>
           <Box className='grid__word-question'>were</Box>
+          <VerbTimeline src='public/assets/icons/continuousPast.svg' />
         </Box>
       </Box>
 
@@ -83,6 +86,7 @@ const Statement: FunctionComponent = () => {
           </Box>
           <Box className='grid__word-question'>will be</Box>
           <Box className='grid__verb'>Ving</Box>
+          <VerbTimeline src='public/assets/icons/continuousFuture.svg' />
         </Box>
       </Box>
     </Fragment>
