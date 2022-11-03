@@ -433,7 +433,7 @@ body::after {
   padding: 6.25rem 0.9375rem;
   justify-content: center;
   align-items: center;
-  border-radius: 0.3125rem;
+  border-radius: 1rem;
   background-color: var(--backgroundContent);
 }
 
@@ -483,7 +483,7 @@ body::after {
 .grid__tense {
   padding: 5px 15px;
   position: relative;
-  border-radius: 5px;
+  border-radius: 12px;
   color: var(--text);
 }
 
@@ -496,7 +496,7 @@ body::after {
   height: 40px;
   justify-content: center;
   align-items: center;
-  border-radius: 0 0 5px 0;
+  border-radius: 12px 0 12px 0;
 }
 
 .grid__pronouns {
