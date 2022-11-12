@@ -22,13 +22,13 @@ const pages: { name: string; path: string }[] = [
 ]
 export function Header() {
   const isTablet = useIsTablet()
-  const [open, setState] = useState(false)
+  const [toggle, setToggle] = useState(false)
 
-  const toggleDrawer = (open) => (event) => {
+  const toggleDrawer = (toggle) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return
     }
-    setState(open)
+    setToggle(toggle)
   }
 
   return (
@@ -65,7 +65,7 @@ export function Header() {
                   <IconButton edge='end' color='primary' aria-label='open drawer' onClick={toggleDrawer(true)}>
                     <MenuIcon fontSize='large' />
                   </IconButton>
-                  <Drawer anchor='right' open={open} onClose={toggleDrawer(false)} onOpen={toggleDrawer(true)}>
+                  <Drawer anchor='right' open={toggle} onClick={() => setToggle(!toggle)}>
                     <Box>
                       {pages.map(({ name, path }) => (
                         <div key={name} className='menu__item'>
