@@ -9,4 +9,4 @@ module.exports = {
     'no-console': ['error', { allow: ['warn', 'error'] }],
   },
   plugins: ['@typescript-eslint', 'simple-import-sort'],
-};
+}

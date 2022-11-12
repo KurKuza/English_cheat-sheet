@@ -1,7 +1,7 @@
 import { ReactJSXElement } from '@emotion/react/types/jsx-namespace'
 import { FunctionComponent } from 'preact'
-import { useEffect, useState } from 'preact/hooks'
-import { useIsTablet } from '../../Hooks/useIsTablet'
+import { useState } from 'preact/hooks'
+
 import { AccordionContainer } from './styles/AccordionContainer'
 import { AccordionDetailsC } from './styles/AccordionDetailsC'
 import { AccordionSummaryC } from './styles/AccordionSummaryC'

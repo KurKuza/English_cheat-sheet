@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 :root {
+  background-color: inherit !important;
+}
+
+/* :root {
   --text: #050505;
   --greenBlack: #8ac926;
   --redBlack: #ff595e;
@@ -11,34 +15,38 @@
   --gray: #e9e9e9;
   --background: #edeef0;
   --backgroundContent: #ffffff;
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #f7f8f2;
+    --greenBlack: #8ac926;
+    --redBlack: #ff595e;
+    --blueBlack: #1982c4;
+    --green: #8ac926;
+    --red: #ff595e;
+    --blue: #1982c4;
+    --mediumBlue: #085db4;
+    --gray: #181a1b;
+    --background: #1e2021;
+    --backgroundContent: #181a1b;
+  }
 }
 
-.dark-theme {
-  --text: #f7f8f2;
-  --greenBlack: #8ac926;
-  --redBlack: #ff595e;
-  --blueBlack: #1982c4;
-  --green: #8ac926;
-  --red: #ff595e;
-  --blue: #1982c4;
-  --mediumBlue: #085db4;
-  --gray: #181a1b;
-  --background: #1e2021;
-  --backgroundContent: #181a1b;
-}
-
-.light-theme {
-  --text: #050505;
-  --greenBlack: #8ac926;
-  --redBlack: #ff595e;
-  --blueBlack: #1982c4;
-  --green: #8ac926;
-  --red: #ff595e;
-  --blue: #1982c4;
-  --mediumBlue: #085db4;
-  --gray: #e9e9e9;
-  --background: #edeef0;
-  --backgroundContent: #ffffff;
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #050505;
+    --greenBlack: #8ac926;
+    --redBlack: #ff595e;
+    --blueBlack: #1982c4;
+    --green: #8ac926;
+    --red: #ff595e;
+    --blue: #1982c4;
+    --mediumBlue: #085db4;
+    --gray: #e9e9e9;
+    --background: #edeef0;
+    --backgroundContent: #ffffff;
+  }
 }
 
 * {

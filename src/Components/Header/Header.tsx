@@ -1,13 +1,13 @@
 import MenuIcon from '@mui/icons-material/Menu'
 import { Box, IconButton, Toolbar } from '@mui/material'
-import { useState } from 'react'
-
 import Button from '@mui/material/Button'
 import Drawer from '@mui/material/Drawer'
 import { Fragment } from 'preact'
+import { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
-import { AppBarC } from './styles/AppBarC'
+
 import { useIsTablet } from '../../Hooks/useIsTablet'
+import { AppBarC } from './styles/AppBarC'
 
 const pages: { name: string; path: string }[] = [
   { name: 'Main', path: '/' },
@@ -41,7 +41,7 @@ export function Header() {
                 <nav className='menu__body'>
                   <ul className='menu__list'>
                     {pages.map(({ name, path }) => (
-                      <li className='menu__item'>
+                      <li className='menu__item' key={name}>
                         <Button
                           variant='text'
                           size='large'
@@ -57,7 +57,7 @@ export function Header() {
                         </Button>
                       </li>
                     ))}
-                    <li className='menu__item'></li>
+                    <li className='menu__item' />
                   </ul>
                 </nav>
               ) : (
