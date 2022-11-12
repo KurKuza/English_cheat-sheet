@@ -1,31 +1,30 @@
 import { Box } from '@mui/material'
 import { FunctionComponent } from 'preact'
-import { useEffect } from 'preact/hooks'
+import { useRef } from 'preact/hooks'
 
 import IrregularList from '../Db/IrregularList.json'
 
 const IrregularVerbs: FunctionComponent = () => {
-  useEffect(() => {
-    document.querySelector('#search').oninput = function () {
-      const val = this.value.toUpperCase().trim(),
-        tr = document.querySelectorAll('tbody tr')
+  const searchRef = useRef<HTMLInputElement>(null)
 
-      if (val != '') {
-        tr.forEach(function (elem) {
-          if (elem.innerText.toUpperCase().search(val) == -1) {
-            elem.classList.add('hide')
-          } else {
-            elem.classList.remove('hide')
-          }
-        })
-      } else {
-        tr.forEach(function (elem) {
+  function search() {
+    const val = searchRef.current.value.toUpperCase().trim(),
+      tr = document.querySelectorAll('tbody tr')
+
+    if (val != '') {
+      tr.forEach(function (elem) {
+        if (elem.innerHTML.toUpperCase().search(val) == -1) {
+          elem.classList.add('hide')
+        } else {
           elem.classList.remove('hide')
-        })
-      }
+        }
+      })
+    } else {
+      tr.forEach(function (elem) {
+        elem.classList.remove('hide')
+      })
     }
-  }, [])
-
+  }
   return (
     <main className='page page-verbs'>
       <section className='verbs'>
@@ -33,6 +32,8 @@ const IrregularVerbs: FunctionComponent = () => {
           <Box className='input__search'>
             <input
               id='search'
+              ref={searchRef}
+              onInput={() => search()}
               autoComplete='off'
               type='text'
               name='form[]'
