@@ -6,7 +6,7 @@ import { Fragment } from 'preact'
 import { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
-import { useIsTablet } from '../../Hooks/useIsTablet'
+import { useIsTablet } from '../../Hooks/isTablet'
 import { AppBarC } from './styles/AppBarC'
 
 const pages: { name: string; path: string }[] = [
