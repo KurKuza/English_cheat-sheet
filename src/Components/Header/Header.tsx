@@ -2,7 +2,6 @@ import MenuIcon from '@mui/icons-material/Menu'
 import { Box, IconButton, Toolbar } from '@mui/material'
 import Button from '@mui/material/Button'
 import Drawer from '@mui/material/Drawer'
-import { Fragment } from 'preact'
 import { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
@@ -32,7 +31,7 @@ export function Header() {
   }
 
   return (
-    <Fragment>
+    <>
       <Box className='wrapper__container'>
         <AppBarC position='static'>
           <Box className='header__container'>
@@ -61,7 +60,7 @@ export function Header() {
                   </ul>
                 </nav>
               ) : (
-                <Fragment>
+                <>
                   <IconButton edge='end' color='primary' aria-label='open drawer' onClick={toggleDrawer(true)}>
                     <MenuIcon fontSize='large' />
                   </IconButton>
@@ -80,13 +79,13 @@ export function Header() {
                       ))}
                     </Box>
                   </Drawer>
-                </Fragment>
+                </>
               )}
             </Toolbar>
           </Box>
         </AppBarC>
       </Box>
       <Outlet />
-    </Fragment>
+    </>
   )
 }

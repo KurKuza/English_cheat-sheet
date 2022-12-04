@@ -1,8 +1,9 @@
 import { Box } from '@mui/system'
-import { Fragment, FunctionComponent } from 'preact'
+import { FunctionComponent } from 'preact'
 
 import Spoilers from '../Components/Spoiler/Spoilers'
 import VerbTimeline from '../Components/VerbTimeline/Verbtimeline'
+import { usePageLogic } from '../Hooks/pageLogic'
 
 const continuous: FunctionComponent = () => {
   return (
@@ -15,8 +16,9 @@ const continuous: FunctionComponent = () => {
 }
 
 const Statement: FunctionComponent = () => {
+  usePageLogic()
   return (
-    <Fragment>
+    <>
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark present-mark'>Pr</Box>
         <Box className='grid__pronouns grid-3-3'>
@@ -90,13 +92,13 @@ const Statement: FunctionComponent = () => {
           <VerbTimeline src='assets/icons/continuousFuture.svg' />
         </Box>
       </Box>
-    </Fragment>
+    </>
   )
 }
 
 const Denial: FunctionComponent = () => {
   return (
-    <Fragment>
+    <>
       <Box className='grid__tense denial'>
         <Box className='grid__mark present-mark hide-mark'>Pr</Box>
         <Box className='grid__pronouns grid-3-3'>
@@ -167,13 +169,13 @@ const Denial: FunctionComponent = () => {
           <Box className='grid__verb'>Ving</Box>
         </Box>
       </Box>
-    </Fragment>
+    </>
   )
 }
 
 const Question: FunctionComponent = () => {
   return (
-    <Fragment>
+    <>
       <Box className='grid__tense question'>
         <Box className='grid__mark present-mark hide-mark'>Pr</Box>
         <Box className='grid__pronouns grid-3-3'>
@@ -245,7 +247,7 @@ const Question: FunctionComponent = () => {
           <Box className='grid__verb'>Ving?</Box>
         </Box>
       </Box>
-    </Fragment>
+    </>
   )
 }
 

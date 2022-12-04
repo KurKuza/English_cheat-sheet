@@ -2,7 +2,10 @@ import { Box } from '@mui/material'
 import { FunctionComponent } from 'preact'
 import { Link } from 'react-router-dom'
 
+import { usePageLogic } from '../Hooks/pageLogic'
+
 const Home: FunctionComponent = () => {
+  usePageLogic()
   return (
     <Box className='wrapper'>
       <main className='page page-home'>

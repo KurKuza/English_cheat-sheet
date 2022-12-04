@@ -1,7 +1,8 @@
 import { Box } from '@mui/system'
-import { Fragment, FunctionComponent } from 'preact'
+import { FunctionComponent } from 'preact'
 
 import Spoilers from '../Components/Spoiler/Spoilers'
+import { usePageLogic } from '../Hooks/pageLogic'
 
 const PassiveVoice: FunctionComponent = () => {
   return (
@@ -14,8 +15,9 @@ const PassiveVoice: FunctionComponent = () => {
 }
 
 const Statement: FunctionComponent = () => {
+  usePageLogic()
   return (
-    <Fragment>
+    <>
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark present-mark'>Pr</Box>
         <Box className='grid__pronouns grid__1-2'>
@@ -61,13 +63,13 @@ const Statement: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
-    </Fragment>
+    </>
   )
 }
 
 const Denial: FunctionComponent = () => {
   return (
-    <Fragment>
+    <>
       <Box className='grid__tense denial'>
         <Box className='grid__mark present-mark hide-mark'>Pr</Box>
         <Box className='grid__pronouns colum-1-3'>
@@ -103,13 +105,13 @@ const Denial: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
-    </Fragment>
+    </>
   )
 }
 
 const Question: FunctionComponent = () => {
   return (
-    <Fragment>
+    <>
       <Box className='grid__tense question'>
         <Box className='grid__mark present-mark hide-mark'>Pr</Box>
         <Box className='grid__pronouns colum-1-3'>
@@ -139,7 +141,7 @@ const Question: FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
-    </Fragment>
+    </>
   )
 }
 

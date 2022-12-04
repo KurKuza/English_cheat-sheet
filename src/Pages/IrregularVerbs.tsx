@@ -3,8 +3,10 @@ import { FunctionComponent } from 'preact'
 
 import TableSearch from '../Components/TableSearch/TableSearch'
 import IrregularList from '../Db/IrregularList.json'
+import { usePageLogic } from '../Hooks/pageLogic'
 
 const IrregularVerbs: FunctionComponent = () => {
+  usePageLogic()
   return (
     <main className='page page-verbs'>
       <section className='verbs'>
