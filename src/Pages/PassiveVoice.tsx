@@ -1,5 +1,6 @@
 import { Box } from '@mui/system'
 import { Fragment, FunctionComponent } from 'preact'
+
 import Spoilers from '../Components/Spoiler/Spoilers'
 
 const PassiveVoice: FunctionComponent = () => {

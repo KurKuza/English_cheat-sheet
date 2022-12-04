@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'preact'
+
 import { ImgContainer } from './styles/ImgContainer'
 
 type Props = {

@@ -1,5 +1,6 @@
 import { Box } from '@mui/system'
 import { Fragment, FunctionComponent } from 'preact'
+
 import Spoilers from '../Components/Spoiler/Spoilers'
 import VerbTimeline from '../Components/VerbTimeline/Verbtimeline'
 
@@ -16,7 +17,7 @@ const continuous: FunctionComponent = () => {
 const Statement: FunctionComponent = () => {
   return (
     <Fragment>
-      <Box data-da='.spollers__statement, 767' className='grid__tense additional-padding statement'>
+      <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark present-mark'>Pr</Box>
         <Box className='grid__pronouns grid-3-3'>
           <Box className='grid__pronouns-general'>I</Box>
