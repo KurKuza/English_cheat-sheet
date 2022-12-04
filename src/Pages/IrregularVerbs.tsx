@@ -1,47 +1,15 @@
 import { Box } from '@mui/material'
 import { FunctionComponent } from 'preact'
-import { useRef } from 'preact/hooks'
 
+import TableSearch from '../Components/TableSearch/TableSearch'
 import IrregularList from '../Db/IrregularList.json'
 
 const IrregularVerbs: FunctionComponent = () => {
-  const searchRef = useRef<HTMLInputElement>(null)
-
-  function search() {
-    const val = searchRef.current.value.toUpperCase().trim(),
-      tr = document.querySelectorAll('tbody tr')
-
-    if (val != '') {
-      tr.forEach(function (elem) {
-        if (elem.innerHTML.toUpperCase().search(val) == -1) {
-          elem.classList.add('hide')
-        } else {
-          elem.classList.remove('hide')
-        }
-      })
-    } else {
-      tr.forEach(function (elem) {
-        elem.classList.remove('hide')
-      })
-    }
-  }
   return (
     <main className='page page-verbs'>
       <section className='verbs'>
         <Box className='verbs'>
-          <Box className='input__search'>
-            <input
-              id='search'
-              ref={searchRef}
-              onInput={() => search()}
-              autoComplete='off'
-              type='text'
-              name='form[]'
-              data-error='Ошибка'
-              placeholder='Search'
-              className='input'
-            />
-          </Box>
+          <TableSearch />
           <table className='irregular-verbs'>
             <thead>
               <tr>

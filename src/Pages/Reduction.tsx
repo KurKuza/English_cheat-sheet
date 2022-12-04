@@ -1,15 +1,18 @@
-import { FunctionComponent } from 'preact'
-import ReductionList from '../Db/ReductionList.json'
 import { Box } from '@mui/material'
+import { FunctionComponent } from 'preact'
+
+import TableSearch from '../Components/TableSearch/TableSearch'
+import ReductionList from '../Db/ReductionList.json'
 
 const Reduction: FunctionComponent = () => {
   return (
     <main className='page page-verbs'>
       <Box className='reduction__container'>
+        <TableSearch />
         <table className='reduction__table'>
           <tbody>
             {ReductionList.map((words) => (
-              <tr>
+              <tr key={words.full}>
                 <td>{words.full}</td>
                 <td>{words.reduced}</td>
               </tr>
