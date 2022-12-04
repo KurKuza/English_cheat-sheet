@@ -1,7 +1,7 @@
-import { useEffect } from 'preact/hooks'
+import { useLayoutEffect } from 'preact/hooks'
 
 export function usePageLogic() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 }
