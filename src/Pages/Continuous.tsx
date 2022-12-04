@@ -7,7 +7,7 @@ const continuous: FunctionComponent = () => {
   return (
     <section className='tense-time'>
       <div className='tense-time__container'>
-        <Spoilers statement={<Statement />} denial={<Denial />} quention={<Question />} />
+        <Spoilers statement={<Statement />} denial={<Denial />} question={<Question />} />
       </div>
     </section>
   )
@@ -44,7 +44,7 @@ const Statement: FunctionComponent = () => {
 
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark past-mark'>Pa</Box>
-        <Box className='grid__pronouns colom-3'>
+        <Box className='grid__pronouns colum-3'>
           <Box className='grid__pronouns-general'>
             I<br />
             You
@@ -69,7 +69,7 @@ const Statement: FunctionComponent = () => {
 
       <Box className='grid__tense additional-padding statement'>
         <Box className='grid__mark future-mark'>Fu</Box>
-        <Box className='grid__pronouns colom-1-3'>
+        <Box className='grid__pronouns colum-1-3'>
           <Box className='grid__pronouns-general'>
             I<br />
             You
@@ -123,7 +123,7 @@ const Denial: FunctionComponent = () => {
 
       <Box className='grid__tense denial'>
         <Box className='grid__mark past-mark hide-mark'>Pa</Box>
-        <Box className='grid__pronouns colom-3'>
+        <Box className='grid__pronouns colum-3'>
           <Box className='grid__pronouns-general'>
             I<br />
             You
@@ -147,7 +147,7 @@ const Denial: FunctionComponent = () => {
 
       <Box className='grid__tense denial'>
         <Box className='grid__mark future-mark hide-mark'>Fu</Box>
-        <Box className='grid__pronouns colom-1-3'>
+        <Box className='grid__pronouns colum-1-3'>
           <Box className='grid__pronouns-general'>
             I<br />
             You
@@ -200,7 +200,7 @@ const Question: FunctionComponent = () => {
 
       <Box className='grid__tense question'>
         <Box className='grid__mark past-mark hide-mark'>Pa</Box>
-        <Box className='grid__pronouns colom-3'>
+        <Box className='grid__pronouns colum-3'>
           <Box className='grid__word-question'>Was</Box>
           <Box className='grid__pronouns-general'>
             i<br />

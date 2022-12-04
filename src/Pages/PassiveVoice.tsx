@@ -6,7 +6,7 @@ const PassiveVoice: FunctionComponent = () => {
   return (
     <section className='tense-time'>
       <div className='tense-time__container'>
-        <Spoilers statement={<Statement />} denial={<Denial />} quention={<Question />} />
+        <Spoilers statement={<Statement />} denial={<Denial />} question={<Question />} />
       </div>
     </section>
   )
@@ -69,7 +69,7 @@ const Denial: FunctionComponent = () => {
     <Fragment>
       <Box className='grid__tense denial'>
         <Box className='grid__mark present-mark hide-mark'>Pr</Box>
-        <Box className='grid__pronouns colom-1-3'>
+        <Box className='grid__pronouns colum-1-3'>
           <Box className='grid__pronouns-general'>
             am
             <br />
@@ -88,7 +88,7 @@ const Denial: FunctionComponent = () => {
 
       <Box className='grid__tense denial'>
         <Box className='grid__mark past-mark hide-mark'>Pa</Box>
-        <Box className='grid__pronouns colom-1-3'>
+        <Box className='grid__pronouns colum-1-3'>
           <Box className='grid__pronouns-general'>
             was
             <br />
@@ -111,7 +111,7 @@ const Question: FunctionComponent = () => {
     <Fragment>
       <Box className='grid__tense question'>
         <Box className='grid__mark present-mark hide-mark'>Pr</Box>
-        <Box className='grid__pronouns colom-1-3'>
+        <Box className='grid__pronouns colum-1-3'>
           <Box className='grid__pronouns-general'>
             have
             <br />
@@ -128,7 +128,7 @@ const Question: FunctionComponent = () => {
 
       <Box className='grid__tense question'>
         <Box className='grid__mark past-mark hide-mark'>Pa</Box>
-        <Box className='grid__pronouns colom-1-3'>
+        <Box className='grid__pronouns colum-1-3'>
           <Box className='grid__pronouns-general'>had</Box>
           <Box className='grid__word-question'>been</Box>
           <Box className='grid__verb'>

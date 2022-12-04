@@ -230,7 +230,7 @@ h6 {
   visibility: hidden;
 }
 
-.colom-3 {
+.colum-3 {
   -ms-grid-rows: 1fr 1fr !important;
   -ms-grid-columns: 1fr 1fr 1fr !important;
   grid-template: 1fr 1fr/1fr 1fr 1fr !important;
@@ -242,13 +242,13 @@ h6 {
   grid-template: 1fr 1fr/1fr 1fr 1fr 1fr !important;
 }
 
-.colom-1 {
+.colum-1 {
   -ms-grid-rows: 1fr !important;
   -ms-grid-columns: 1fr 1fr !important;
   grid-template: 1fr/1fr 1fr !important;
 }
 
-.colom-1-3 {
+.colum-1-3 {
   -ms-grid-rows: 1fr !important;
   -ms-grid-columns: 1fr 1fr 1fr !important;
   grid-template: 1fr/1fr 1fr 1fr !important;

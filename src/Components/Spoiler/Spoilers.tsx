@@ -9,9 +9,9 @@ import { AccordionSummaryC } from './styles/AccordionSummaryC'
 type SpoilersProps = {
   statement: ReactJSXElement
   denial: ReactJSXElement
-  quention: ReactJSXElement
+  question: ReactJSXElement
 }
-const Spoilers: FunctionComponent<SpoilersProps> = ({ statement, denial, quention }) => {
+const Spoilers: FunctionComponent<SpoilersProps> = ({ statement, denial, question }) => {
   const [open, setOpen] = useState(true)
   const [open2, setOpen2] = useState(true)
   const [open3, setOpen3] = useState(true)
@@ -28,7 +28,7 @@ const Spoilers: FunctionComponent<SpoilersProps> = ({ statement, denial, quentio
       </AccordionContainer>
       <AccordionContainer disableGutters expanded={open3} onClick={() => setOpen3(!open3)}>
         <AccordionSummaryC style={{ color: '#1982c4' }}>?</AccordionSummaryC>
-        <AccordionDetailsC>{quention}</AccordionDetailsC>
+        <AccordionDetailsC>{question}</AccordionDetailsC>
       </AccordionContainer>
     </>
   )
