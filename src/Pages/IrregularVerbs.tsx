@@ -18,7 +18,7 @@ const IrregularVerbs: FunctionComponent = () => {
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls='panel2a-content' id='panel2a-header'>
               <h4 style={{ color: '#8ac926' }}>Irregular Verbs Base</h4>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails style={{ padding: '0' }}>
               <table className='irregular-verbs'>
                 <thead>
                   <tr>
